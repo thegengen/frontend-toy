@@ -1,18 +1,21 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Neutrino-based frontend toy",
+  "main": "index.js",
+  "author": "Eugen Minciu",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "neutrino": "^5.3.0",
+    "neutrino-preset-react": "^5.3.0"
+  },
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
-  },
-  "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "next"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "neutrino start --use neutrino-preset-react",
+    "build": "neutrino build --use neutrino-preset-react"
   }
 }
