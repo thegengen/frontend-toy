@@ -20,6 +20,13 @@
   "scripts": {
     "start": "neutrino start --use neutrino-preset-react",
     "build": "neutrino build --use neutrino-preset-react",
-     "test": "neutrino test --use neutrino-preset-react neutrino-preset-jest"
+    "test": "neutrino test --use neutrino-preset-react neutrino-preset-jest"
+  },
+  "neutrino": {
+    "options": {
+      "html": {
+        "links": ["https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"]
+      }
+    }
   }
 }
